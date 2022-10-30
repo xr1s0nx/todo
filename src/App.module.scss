@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+
+.App {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+  }
+  .ToDo {
+    width: 100%;
+    .logo {
+      font-size: 50px;
+      color: pink;
+      font-weight: 800;
+      font-style: italic;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .wrap {
+      background: #fff;
+      padding-top: 0;
+      overflow-x: hidden;
+      border-radius: 5px;
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      max-height: 500px;
+      overflow-y: auto;
+      transition: height 1s linear;
+    }
+    .tasksList {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+    }
+  }
+}

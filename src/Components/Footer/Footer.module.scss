@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  .itemsLeft {
+    font-size: 12px;
+  }
+
+  .filter {
+    margin: 0 5px;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: .3s border linear;
+    padding: 2px 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    &.active {
+      border: 1px solid pink;
+    }
+  }
+  .clearCompleted {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+  }
+}
